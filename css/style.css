@@ -66,6 +66,10 @@ blockquote {
 
 /* Media query for smaller screens */
 @media (max-width: 600px) {
+  .photo{
+      width: 100%;
+  }
+
   .photo img {
       width: 100%; /* Each image takes full width, displaying in a single column */
   }
