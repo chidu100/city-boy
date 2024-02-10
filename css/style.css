@@ -1,0 +1,65 @@
+* {
+    box-sizing: border-box;
+  }
+
+  body {
+    background-color: white;
+    font-family: 'Borel', cursive;
+  }
+
+header, footer {
+    background-color: black;
+    color: white;
+    padding: 10px;
+}
+
+
+ .photo {
+   width: 500px;
+   display: flex;
+    flex-wrap: wrap; /* Allows items to wrap as needed */
+    justify-content: space-around; /* Spaces out the images evenly */
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); /* Shadow applied to the container */
+    border-radius: 10px; /* Optional: to have rounded corners for the container */
+}
+
+ .photo img {
+   width: calc(50% - 20px); /* Adjusts image width to fit 2 per row, accounting for some padding */
+    margin: 10px; /* Spaces out the images within the container */
+    transition: transform 0.3s ease; /* For a zoom effect on hover */
+ }
+ .photo:hover {
+   transform: scale(1.05); /* Optional: Slightly enlarge images on hover */
+   box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.5); /* Optional: Enhance shadow effect on hover */
+}
+
+blockquote {
+   margin: 20px 0;
+   padding: 20px;
+   background-color: #f9f9f9;
+   border-left: 5px solid #ccc;
+ }
+ 
+ blockquote p {
+   font-style: italic;
+   color: #333;
+ }
+ 
+ blockquote footer {
+   margin-top: 10px;
+   font-size: 0.8em;
+   color: #666;
+ }
+ 
+ cite {
+   font-style: normal;
+   font-weight: bold;
+ }
+ 
+ audio{
+   margin: auto !important;
+}
