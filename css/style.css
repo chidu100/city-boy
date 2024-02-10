@@ -63,3 +63,10 @@ blockquote {
  audio{
    margin: auto !important;
 }
+
+/* Media query for smaller screens */
+@media (max-width: 600px) {
+  .photo img {
+      width: 100%; /* Each image takes full width, displaying in a single column */
+  }
+}
